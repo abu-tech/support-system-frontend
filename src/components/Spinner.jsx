@@ -1,9 +1,8 @@
 
-
 function Spinner() {
   return (
-    <div className="loadingSpinnerContainer">
-        <div className="loadingSpinner"></div>
+    <div className="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
     </div>
   )
 }
