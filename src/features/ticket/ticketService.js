@@ -1,5 +1,5 @@
 import axios from "axios"
-const API_URL = "/api/tickets"
+const API_URL = `${process.env.REACT_APP_APP_URL}/api/tickets`
 
 const create = async (ticketData, token) => {
     const config = {
