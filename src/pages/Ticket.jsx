@@ -63,9 +63,8 @@ function Ticket() {
 
     const onNoteSubmit = (e) => {
         e.preventDefault()
-        // console.log(noteText)
-        const id = params.id
-        dispatch(createNote({id, noteText}))
+        const ticketId = params.id
+        dispatch(createNote({ticketId, noteData: noteText}))
         setNoteText("")
         closeModal()
     }
